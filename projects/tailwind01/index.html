@@ -14,6 +14,13 @@
         .card {
           @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-2 ring-slate-900/5 dark:bg-black;
         }
+        .button-styles{
+            @apply bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600
+                   hover:to-blue-600 focus:outline-none focus:ring focus:ring-purple-300
+                   active:bg-blue-700 px-6 py-3 rounded-lg text-white font-semibold
+                   shadow-md transition duration-500 ease-in-out transform hover:scale-105
+
+        }
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -110,7 +117,7 @@
       </p>
       <button
         id="toggleDark"
-        class="text-blue-900 px-4 py-2 text-sm font-medium mt-6 bg-blue-200 rounded-md"
+        class="button-styles"
         onclick="document.body.classList.toggle('dark')"
       >
         Toggle Dark Mode
