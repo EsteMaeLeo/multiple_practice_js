@@ -14,9 +14,6 @@ const Nav = () => {
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-          <li>test</li>
-          <li>test</li>
-
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
