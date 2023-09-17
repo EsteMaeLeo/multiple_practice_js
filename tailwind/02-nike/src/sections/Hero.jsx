@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import { arrowRight } from "../assets/icons";
+import { arrowRight } from  "../assets/icons";
 
 const Hero = () => {
   return (
