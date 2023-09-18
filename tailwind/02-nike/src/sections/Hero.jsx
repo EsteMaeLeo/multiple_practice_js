@@ -8,8 +8,7 @@ import { useState } from "react";
 const Hero = () => {
 
   const [bigShoeImg, setBigShoeImage] = useState(bigShoe1)
-  useState
-
+  
   return (
     <section
       id="home"
