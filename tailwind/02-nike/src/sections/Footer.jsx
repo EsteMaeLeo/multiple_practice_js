@@ -51,23 +51,19 @@ const Footer = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-white-400 flex justify-between mt-24 max-sm:flex-col max-sm:items-center">
-          <div className="cursor-pointer flex flex-1 justify-start items-center gap-2 font-montserrat">
-            <img
-              src={copyrightSign}
-              alt="copyright"
-              width={20}
-              height={20}
-              className="gap-2 rounded-full m-0"
-            />
-            <p>Copyright. All rights reserved</p>
-          </div>
-          <p className="font-montserrat cursor-pointer">
-            {" "}
-            Terms and Conditions
-          </p>
+      </div>
+      <div className="text-white-400 flex justify-between mt-24 max-sm:flex-col max-sm:items-center">
+        <div className="cursor-pointer flex flex-1 justify-start items-center gap-2 font-montserrat">
+          <img
+            src={copyrightSign}
+            alt="copyright"
+            width={20}
+            height={20}
+            className="rounded-full m-0"
+          />
+          <p>Copyright. All rights reserved</p>
         </div>
+        <p className="font-montserrat cursor-pointer"> Terms and Conditions</p>
       </div>
     </footer>
   );
