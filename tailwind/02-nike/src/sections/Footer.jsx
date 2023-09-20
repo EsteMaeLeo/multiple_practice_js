@@ -32,10 +32,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
-          {footerLinks.map((section) => {
+         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          {footerLinks.map((section) => (
             <div key={section.title}>
-              <h4 className="text-white">{section.title}</h4>
+              <h4 className="text-white text-2xl font-montserrat leading-normal font-medium mb-6">{section.title}</h4>
               <ul>
                 {section.links.map((link) => (
                   <li key={link.name} className="text-white-400">
@@ -43,8 +43,19 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>;
-          })}
+              {section.links.map((link) =>(
+                <li key={link.link} className="text-white-400 font-montserrat mt-3 text-base leading-normal hover:text-slate-gray"><a href={link.link}>{link.name}</a></li>
+              ))}
+            </div>
+          ))}
+        </div>
+
+        <div className="text-white-400 flex justify-between mt-24 max-sm:flex-col max-sm:items-center">
+          <div className="cursor-pointer flex flex-1 justify-start items-center gap-2 font-montserrat">
+            <img src={copyrightSign} alt="copyright" width={20} height={20} className="gap-2 rounded-full m-0"/>
+            <p>Copyright. All rights reserved</p>
+          </div>
+          <p className="font-montserrat cursor-pointer"> Terms and Conditions</p>
         </div>
       </div>
     </footer>
