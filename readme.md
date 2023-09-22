@@ -3,6 +3,39 @@
 Will find different projects for Javascript, HTML, CSS.
 Also for use different frameworks.
 
+# Javascript
+
+Variable create using LET new form and for legacy you can find VAR.
+
+Loops: for(let i = 0; i<5; i++){}
+
+while(age < 18){
+age++
+}
+
+Functions:
+function add(a, b{
+return a + b;
+})
+
+Arror functions:
+const add = (a,b) => {
+return a + b;
+}
+
+Conditionals:
+
+```
+if{age < 30}{
+    console.log("Younger than 30);
+}else{
+    console.log("Older than 30");
+}
+```
+
+New:
+`age < 30 ? console.log("Younger than 30) : console.log("Older than 30")`
+
 # Tailwind
 
 For play CDN use ` "<script src="https://cdn.tailwindcss.com"></script>`
